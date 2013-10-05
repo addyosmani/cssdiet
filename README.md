@@ -1,7 +1,7 @@
 cssdiet
 =======
 
-A DevTools extension for multi-page unused CSS auditing
+A DevTools extension for multi-page unused CSS auditing. Inspired by UnusedCSS and Helium.
 
 ## Goals
 

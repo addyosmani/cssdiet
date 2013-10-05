@@ -1,0 +1,24 @@
+{
+  "name": "CSSDiet",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "A DevTools extension for multi-page unused CSS auditing",
+  "devtools_page": "html/devtools.html",
+  "icons":{
+    "128": "chrome.png"
+  },
+  "content_scripts":[
+  {
+      "matches": ["<all_urls>"],
+      "js": ["object/selector.js", "object/domain.js","background.js","html/panel.js"],
+      "run_at": "document_start"   
+    }
+  ],
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
