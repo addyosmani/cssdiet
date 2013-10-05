@@ -1,0 +1,12 @@
+{
+  "name": "CSSDiet",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "A DevTools extension for multi-page unused CSS auditing",
+  "devtools_page": "devtools.html",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
