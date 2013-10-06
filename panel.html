@@ -8,19 +8,13 @@
 	<button id="insertscript">Insert script into inspected page</button>
 	<button id="insertmessagebutton">Insert button to send a message from page to devtools</button>
 
-	<script src="scripts/messaging.js"></script>
-	<script src="scripts/panel.js"></script>
-
-
-	<!--newer UI-->
-
 
     <div>
         <div id="setDomain_container">
             <p>
                 <i>The extension is OFF. Enter your domain and click set domain to turn it on.</i>
             </p>
-            <input type="text" id="domain"/>
+            <input type="text" id="domain" value=""/>
             <button id="setDomain">Set Domain</button><br/>
         </div>
         <div id="active_container">
@@ -34,6 +28,9 @@
 
     </div>	
 
+
+	<script src="scripts/messaging.js"></script>
+	<script src="scripts/panel.js"></script>
 
 </body>
 </html>

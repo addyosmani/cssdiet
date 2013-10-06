@@ -13,5 +13,9 @@
         "http://*/*",
         "https://*/*"
     ],
+    "web_accessible_resources": [
+        "results/results.js",
+        "results/results.html"
+    ],
     "manifest_version": 2
 }
