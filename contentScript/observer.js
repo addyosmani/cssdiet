@@ -3,7 +3,7 @@ var lastCall= 0;
 var timer = 0;
 
 /**
- * Get the unused selectors
+ * Get the list of unused selectors
  */
 function run() {
     console.log('Run');

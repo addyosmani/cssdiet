@@ -3,7 +3,7 @@
  *
  * We work one domain at a time so we need a "singleton" domain
  *
- * It store the list of selector we have found and there state
+ * It store the list of selector we have found and their state
  */
 var mDomain = (function(){
     /**

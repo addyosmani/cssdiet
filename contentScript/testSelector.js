@@ -6,7 +6,6 @@ chrome.extension.sendMessage({
     var used = [];
     response.selectors.forEach(function (selector) {
         try {
-            // try catch for the weirdness
             var nodeList = document.querySelectorAll(selector);
             if (nodeList.length) {
                 used.push(selector);

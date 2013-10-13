@@ -1,3 +1,8 @@
+/**
+ * Handles iteration and display of the results for unused
+ * CSS reporting.
+ */
+
 var g_results;
 chrome.extension.sendMessage({
     cmd: "getStats"

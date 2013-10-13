@@ -5,13 +5,20 @@
     "description": "Discover unused CSS bloating up your stylesheets",
     "browser_action": {
         "default_popup": "popup/popup.html",
-        "default_title": "Reduce your CSS"
+        "default_title": "Reduce your CSS",
+        "default_icon": "32x32.png"
+    },
+    "icons": {
+      "32x32": "32x32.png",
+      "128x128": "128x128.png",
+      "512x512": "512x512.png"
     },
     "background": {
         "scripts": [
             "object/selector.js",
             "object/domain.js",
-            "background.js"
+            "background.js",
+            "utils.js"
         ]
     },
     "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
@@ -22,3 +29,4 @@
         "http://*/*"
     ]
 }
+
