@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        body{
+            width:100px;
+            font-family: helveticaneue;
+        }
+
+        #active_container, #setDomain_container{
+            font-size: 12px;
+        }
+
+        #domain{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="setDomain_container">
+            <input type="text" id="domain"/>
+            <button id="setDomain">Start analysis</button><br/>
+        </div>
+        <div id="active_container">
+            <button id="getResults">See Results</button><br>
+            <button id="stop">Stop analysis</button>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+</html>

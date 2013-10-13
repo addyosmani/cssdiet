@@ -1,8 +1,20 @@
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', '']);
+_gaq.push(['_trackPageview']);
+
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
 
 chrome.tabs.getSelected( null, function(tab) {
     var link = tab.url;
     var protocol = link.substr( 0, link.indexOf( "://" ) );
     var minusProto = link.substr( link.indexOf( "://" ) + 3 );
+
     if( link.indexOf( "/" ) !== -1 ){
         minusProto = minusProto.substr( 0, minusProto.indexOf( "/" ) );
     }
@@ -16,7 +28,6 @@ chrome.tabs.getSelected( null, function(tab) {
 });
 
 var btSetDomain = document.getElementById( "setDomain" );
-var btTest      = document.getElementById( "test" );
 var btResults   = document.getElementById( "getResults" );
 var btStop      = document.getElementById( "stop" );
 
@@ -43,13 +54,6 @@ btSetDomain.addEventListener( "click", function(){
     chrome.extension.sendMessage({
         cmd: "setDomain",
         domain: document.getElementById( "domain" ).value
-    });
-});
-
-btTest.addEventListener( "click", function(){
-    _gaq.push(['_trackEvent', 'manualTest', 'clicked'] );
-    chrome.extension.sendMessage({
-        cmd: "runTest"
     });
 });
 

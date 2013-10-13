@@ -1,21 +1,24 @@
 {
-    "name": "CSSDiet",
-    "version": "0.1",
-    "description": "A thing",
-    "devtools_page": "devtools.html",
+    "name": "cssdiet",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "description": "Discover unused CSS bloating up your stylesheets",
+    "browser_action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "Reduce your CSS"
+    },
     "background": {
         "scripts": [
-            "scripts/background.js"
+            "object/selector.js",
+            "object/domain.js",
+            "background.js"
         ]
     },
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
     "permissions": [
-        "tabs", 
-        "http://*/*",
-        "https://*/*"
-    ],
-    "web_accessible_resources": [
-        "results/results.js",
-        "results/results.html"
-    ],
-    "manifest_version": 2
+        "tabs",
+        "notifications",
+        "https://*/*",
+        "http://*/*"
+    ]
 }

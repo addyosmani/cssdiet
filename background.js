@@ -1,22 +1,24 @@
 var timerID = null;
 
 
+/**
+ * Listen for updates in tab navigation between domains.
+ * This allows us to appropriately handle getting assets
+ * like stylesheets from the page.
+ */
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab){
 
-// Add a listener on tab update
-// when we naviguate on the domain we want to get again the list of script, inline, external, etc
-// kind of useless for single page app
-
-
-chrome.tabs.onUpdated.addListener(function( tabId, changeInfo, tab){
-
-    // the domain is not active and the tab have an url
+    // the domain is not active and the tab has a url
     if( mDomain.isActive() && tab.url ){
-        // the domain of the tab url is matching the one we observe
+        // the domain of the tab url is matching the one we're observing
         if( tab.url.indexOf( mDomain.getName() ) !== -1 ){
             tabsID[tab.id] = true;
+
             getStylesheetFromPage( function(){
-                chrome.tabs.executeScript(null, { file: "contentScript/observer.js" },function(){});
+                chrome.tabs.executeScript(null, {
+                    file: "contentScript/observer.js" },function(){});
             });
+
             chrome.browserAction.setBadgeText({
                 text: 'ON',
                 tabId: tab.id
@@ -25,8 +27,10 @@ chrome.tabs.onUpdated.addListener(function( tabId, changeInfo, tab){
     }
 });
 
-
-// our command center
+/**
+ * Handle commands broadcast between components.
+ * TODO: Refactor all of this. Prefer to avoid switch statements.
+ */
 chrome.extension.onMessage.addListener( function(request, sender, sendResponse) {
     console.log( 'Background receive command', request.cmd );
     switch( request.cmd ){
@@ -79,7 +83,6 @@ chrome.extension.onMessage.addListener( function(request, sender, sendResponse) 
             break;
     }
 });
-
 
 //======================================================================================================================
 //======================================================================================================================
@@ -135,7 +138,6 @@ function processInlineStyles( arrText ){
 
 /**
  * Download stylesheets
- *
  * @param {Array} urls
  */
 function downloadStylesheet( urls ){
@@ -219,6 +221,18 @@ function extractSelector( text ){
     // return an array of selectors
     return foundSelectors;
 }
+
+
+var _gaq = _gaq || [];
+var accID = 000000;
+_gaq.push(['_setAccount', accID]);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
 
 
