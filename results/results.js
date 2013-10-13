@@ -30,6 +30,11 @@ chrome.extension.sendMessage({
             '</tbody>' +
         '</table>'
     ;
+
+    // addition
+    chrome.extension.sendMessage({
+        cmd: "stop"
+    });
 });
 
 document.getElementById( "show_unused" ).addEventListener( "click", function(){
