@@ -3,29 +3,53 @@
 <head>
     <title>Results</title>
     <style type="text/css">
+        body{
+            padding:20px;
+        }
         .green{
             background-color: #adff2f;
         }
         .red{
             background-color: #bc8f8f;
         }
-
         td{
             padding: 5px;
         }
-        table{
-            border: black 1px solid;
+        ul {
+            font-size:1.2em;
+        }
+        ul li span{
+            color: gray;
         }
     </style>
-    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="polymer.min.js"></script>
+    <link rel="import" href="chart-js/chart-js.html">
 </head>
 <body>
-    <h1>Results</h1>
+    <h1>CSSDiet Report</h1>
+
+    <template id="selectors" bind="{{selectors}}">
+        <ul>
+            <li><strong>Selectors found</strong>: {{count_selectors}}</li>
+            <li><strong>Used selectors</strong>: {{used_selectors}}</li>
+            <li><strong>Unused selectors</strong>: {{unused_selectors}}</li>
+            <li><strong>Duplicate selectors</strong>: {{duplicate_selectors}}</li>
+        </ul>
+    </template>
+
+    <template id="chart" bind="{{chartData}}">
+      <chart-js dataString="{{data}}" labelArray="['Selectors','Used','Unused','Duplicate']" kind="Bar"></chart-js>
+    </template>
+
+
     <div id="result"></div>
+
     <button id="show_unused">Show Unused</button>
     <button id="show_duplicate">Show Duplicate</button>
     <button id="show_all">Show All ( slow )</button>
     <table id='table'></table>
     <script type="text/javascript" src="results.js"></script>
+
+
 </body>
 </html>

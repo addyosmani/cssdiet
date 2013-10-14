@@ -18,18 +18,31 @@ chrome.extension.sendMessage({
             duplicate++;
         }
     }
+    var pc_used   = ((used/nb)*100).toFixed(2) + '%';
+    var pc_unused = (((nb-used)/nb)*100).toFixed(2) + '%';
+    var pc_duplicate = ((duplicate/nb)*100).toFixed(2) + '%';
 
-    //TODO: Move all of this over to proper templating.
-    document.getElementById( "result" ).innerHTML =
-        '<table>' +
-            '<tbody>' +
-                '<tr><td>Number</td><td>'+ nb +'</td></tr>' +
-                '<tr><td>Used</td><td>'+ used +'</td></tr>' +
-                '<tr><td>Unused</td><td>'+ (nb -used)+'</td></tr>' +
-                '<tr><td>Duplicate</td><td>'+ duplicate +'</td></tr>' +
-            '</tbody>' +
-        '</table>'
-    ;
+    var t = document.getElementById('selectors');
+    t.model = {
+        selectors: {
+            count_selectors: nb,
+            used_selectors: used + ' (' + pc_used +  ')',
+            unused_selectors: (nb -used) + ' (' + pc_unused +  ')',
+            duplicate_selectors: duplicate + ' (' + pc_duplicate +  ')'
+        }
+    };
+
+    var c = document.getElementById('chart');
+    c.model = {
+      chartData: {
+        data: nb + "," + used + "," + (nb-used) + "," + duplicate
+      }
+    };
+
+
+    // Needed to detect model changes if Object.observe
+    // is not available in the JS VM.
+    Platform.performMicrotaskCheckpoint();
 
     // addition
     chrome.extension.sendMessage({
@@ -77,8 +90,5 @@ function displayDetails( mode ){
     }
     document.getElementById( "table" ).innerHTML = html;
 }
-
-
-
 
 

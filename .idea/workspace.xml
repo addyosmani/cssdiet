@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d42a652-5491-4478-828c-6ac91d6e6fa5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/popup/popup.html" afterPath="$PROJECT_DIR$/popup/popup.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/results.html" afterPath="$PROJECT_DIR$/results/results.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/results.js" afterPath="$PROJECT_DIR$/results/results.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,24 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="selector.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/object/selector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="1" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="domain.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/object/domain.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="56" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="background.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/background.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,30 +38,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parser.inlineStyle.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contentScript/parser.inlineStyle.js">
+      <file leaf-file-name="results.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/results.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="17" selection-start="2408" selection-end="2412" vertical-scroll-proportion="-8.807693" vertical-offset="1166" max-vertical-offset="2610">
+            <state line="86" column="61" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.0" vertical-offset="763" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="results.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/results.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/chart-js/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="7" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+            <state line="9" column="23" selection-start="202" selection-end="224" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -93,10 +65,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.14978603" vertical-offset="0" max-vertical-offset="701">
+            <state line="7" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/results/results.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="61" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.57924265" vertical-offset="187" max-vertical-offset="900">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chart-js.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/chart-js/chart-js.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="49" selection-start="1046" selection-end="1046" vertical-scroll-proportion="-9.125" vertical-offset="246" max-vertical-offset="1410">
               <folding />
             </state>
           </provider>
@@ -105,7 +95,7 @@
       <file leaf-file-name="manifest.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="27" selection-start="345" selection-end="345" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="570">
+            <state line="23" column="63" selection-start="655" selection-end="655" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -144,19 +134,21 @@
         <option value="$PROJECT_DIR$/contentScript/observer.js" />
         <option value="$PROJECT_DIR$/contentScript/testSelector.js" />
         <option value="$PROJECT_DIR$/object/domain.js" />
-        <option value="$PROJECT_DIR$/results/results.html" />
         <option value="$PROJECT_DIR$/utils.js" />
-        <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/popup/popup.js" />
         <option value="$PROJECT_DIR$/background.js" />
-        <option value="$PROJECT_DIR$/results/results.js" />
         <option value="$PROJECT_DIR$/popup/popup.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/results/chart.html" />
+        <option value="$PROJECT_DIR$/results/chart-js/chart-js.html" />
+        <option value="$PROJECT_DIR$/results/results.js" />
+        <option value="$PROJECT_DIR$/results/results.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="21" />
+    <option name="x" value="-30" />
     <option name="y" value="22" />
     <option name="width" value="1400" />
     <option name="height" value="860" />
@@ -229,6 +221,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="results" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chart-js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cssdiet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cssdiet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="popup" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -244,20 +254,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="object" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cssdiet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cssdiet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -330,7 +326,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="22" width="1400" height="860" extended-state="0" />
+    <frame x="-30" y="22" width="1400" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -364,20 +360,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/contentScript/observer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="412" selection-end="412" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contentScript/testSelector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="20" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
@@ -400,13 +382,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="345" selection-end="345" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="570">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -445,13 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/results.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="7" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/popup/popup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="7" selection-start="414" selection-end="414" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="645">
@@ -461,7 +429,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.14978603" vertical-offset="0" max-vertical-offset="701">
+        <state line="7" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="63" selection-start="655" selection-end="655" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/chart-js/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="202" selection-end="224" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/chart-js/chart-js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="49" selection-start="1046" selection-end="1046" vertical-scroll-proportion="-9.125" vertical-offset="246" max-vertical-offset="1410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/results.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="61" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.0" vertical-offset="763" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="61" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.57924265" vertical-offset="187" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
